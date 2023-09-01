@@ -1,6 +1,5 @@
 # Command usage
-
-```shell
+```bash
 ./create.sh [Manufacturer] [Model] [Year of Manufacture] [Price]
 ./getAll.sh
 ./getById.sh [Identifier]
@@ -8,6 +7,7 @@
 ./delete.sh [Identifier]
 clear
 help
+```
 
 ### Technologies Used
 Typescript
@@ -24,6 +24,9 @@ To get this project up and running, follow these steps:
 
 1. Clone the repository:
 ```bash
-   git clone https://github.com/yourusername/yourproject.git
-
-2. run docker-compose up
+   git clone https://github.com/neoquijo/optimacros-interview 
+```
+2. Run docker
+  ```bash
+   docker-compose up
+       
