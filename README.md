@@ -25,5 +25,8 @@ To get this project up and running, follow these steps:
 1. Clone the repository:
 ```bash
    git clone https://github.com/neoquijo/optimacros-interview 
-
-2. run docker-compose up
+```
+2. Run docker
+  ```bash
+   docker-compose up
+       
