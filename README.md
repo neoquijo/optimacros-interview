@@ -1,6 +1,5 @@
 # Command usage
 
-```shell
 ./create.sh [Manufacturer] [Model] [Year of Manufacture] [Price]
 ./getAll.sh
 ./getById.sh [Identifier]
