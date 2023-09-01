@@ -1,5 +1,5 @@
 # Command usage
-
+```bash
 ./create.sh [Manufacturer] [Model] [Year of Manufacture] [Price]
 ./getAll.sh
 ./getById.sh [Identifier]
@@ -7,6 +7,7 @@
 ./delete.sh [Identifier]
 clear
 help
+```
 
 ### Technologies Used
 Typescript
