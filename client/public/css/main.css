@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(17, 40, 216);
+    color: white;
+    font-family: monospace;
+    font-size: 2rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+
+.terminal {
+    width: 96%;
+    height: 95%;
+    border: 2px solid white;
+    padding: 0px 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    overflow: auto;
+    line-height: 1.4;
+
+    background-color: rgb(17, 40, 216);
+}
+
+.inputs {
+    display: flex;
+    white-space: nowrap;
+    gap: 1em;
+}
+
+#output {
+
+    width: 100%;
+
+}
+
+#input {
+    font-family: monospace;
+    font-size: 2rem;
+    width: 100% !important;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+}

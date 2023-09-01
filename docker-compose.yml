@@ -1,0 +1,45 @@
+version: '3'
+services:
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    networks:
+      - app_network
+
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: server
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./server:/app
+    working_dir: /app
+    networks:
+      - app_network
+    depends_on:
+      - mongodb
+    command: npm run start
+
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: client
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./client:/app
+    working_dir: /app
+    networks:
+      - app_network
+    command: sh -c "npm run build && node dist/index.js"
+    depends_on:
+      - server
+
+networks:
+  app_network:
+    driver: bridge
